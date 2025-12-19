@@ -1,7 +1,7 @@
 # 🌐 Azure IoT Real-Time Monitoring Dashboard
 
 A **full-stack, real-time IoT monitoring system** built using **Azure IoT Hub**, **Node.js**, **WebSockets**, and **React**.  
-This project simulates IoT devices, streams telemetry securely to Azure, processes live data in a backend server, and visualizes it through an interactive web dashboard with alerts, charts, and history.
+This project simulates IoT devices, streams telemetry securely to Azure, processes live data in a backend server, and visualises it through an interactive web dashboard with alerts, charts, and history.
 
 ---
 
@@ -10,7 +10,7 @@ This project simulates IoT devices, streams telemetry securely to Azure, process
 Modern IoT systems require:
 - Real-time data ingestion
 - Secure cloud communication
-- Live visualization
+- Live visualisation
 - Alerting on abnormal conditions
 
 This project demonstrates an **end-to-end Azure IoT architecture** using industry-standard tools and best practices.
@@ -42,7 +42,7 @@ This project demonstrates an **end-to-end Azure IoT architecture** using industr
 ### 🚨 Intelligent Alerts
 - Threshold-based alerting
 - Normal / Warning / Critical states
-- Visual color indicators
+- Visual colour indicators
 
 ### 🔐 Security Best Practices
 - No secrets in source code
@@ -110,6 +110,7 @@ azure-iot-dashboard/
 └── README.md
 
 
+
 ## 🛠️ Technology Stack
 
 ### ☁️ Cloud
@@ -141,8 +142,9 @@ azure-iot-dashboard/
 ```env
 DEVICE_CONNECTION_STRING=HostName=xxxx.azure-devices.net;DeviceId=device001;SharedAccessKey=XXXX
 
+---
 
-### `azure-iot-backend/.env`
+**### `azure-iot-backend/.env`
 
 EVENT_HUB_CONNECTION_STRING=Endpoint=sb://xxxx.servicebus.windows.net/;
 SharedAccessKeyName=iothubowner;
