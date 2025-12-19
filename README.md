@@ -144,7 +144,8 @@ DEVICE_CONNECTION_STRING=HostName=xxxx.azure-devices.net;DeviceId=device001;Shar
 
 ---
 
-## `azure-iot-backend/.env`
+
+### `azure-iot-backend/.env`
 ```env
 EVENT_HUB_CONNECTION_STRING=Endpoint=sb://xxxx.servicebus.windows.net/;
 SharedAccessKeyName=iothubowner;
