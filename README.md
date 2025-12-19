@@ -52,7 +52,7 @@ This project demonstrates an end-to-end Azure IoT architecture using industry-st
 ---
 
 ## 🧠 System Architecture
-
+```
 +-------------------+
 | Device Simulator  |
 | (Node.js + MQTT)  |
@@ -81,11 +81,12 @@ This project demonstrates an end-to-end Azure IoT architecture using industry-st
 | - Charts                 |
 | - Alerts & History       |
 +--------------------------+
+```
 
 ---
 
 ## 🧱 Project Structure
-
+```
 azure-iot-dashboard/
 │
 ├── device/
@@ -108,6 +109,7 @@ azure-iot-dashboard/
 │
 ├── .gitignore
 └── README_FULL.md        # This file
+```
 
 ---
 
