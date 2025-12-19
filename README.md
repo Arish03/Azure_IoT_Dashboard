@@ -142,6 +142,7 @@ azure-iot-dashboard/
 ```env
 DEVICE_CONNECTION_STRING=HostName=xxxx.azure-devices.net;DeviceId=device001;SharedAccessKey=XXXX
 
+
 ---
 
 
@@ -152,7 +153,9 @@ SharedAccessKeyName=iothubowner;
 SharedAccessKey=XXXX;
 EntityPath=xxxx
 
+
 ---
+
 
 ## ▶️ How to Run the Application
 
