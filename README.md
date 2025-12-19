@@ -141,24 +141,30 @@ azure-iot-dashboard/
 ```env
 DEVICE_CONNECTION_STRING=HostName=xxxx.azure-devices.net;DeviceId=device001;SharedAccessKey=XXXX
 
-📄 azure-iot-backend/.env
+
+### `azure-iot-backend/.env`
+
 EVENT_HUB_CONNECTION_STRING=Endpoint=sb://xxxx.servicebus.windows.net/;
 SharedAccessKeyName=iothubowner;
 SharedAccessKey=XXXX;
 EntityPath=xxxx
 
-▶️ How to Run the Application
-1️⃣ Device Simulator
+---
+
+## ▶️ How to Run the Application
+
+### 1️⃣ Run Device Simulator
+
 cd device
 npm install
 node device.js
 
-2️⃣ Backend Server
+### 2️⃣ Backend Server
 cd azure-iot-backend
 npm install
 node server.js
 
-3️⃣ Frontend Dashboard
+### 3️⃣ Frontend Dashboard
 cd azure-iot-frontend
 npm install
 npm start
@@ -168,7 +174,8 @@ Open browser:
 
 http://localhost:3000
 
-📊 Telemetry Data Model
+## 📊 Telemetry Data Model
+
 {
   "deviceId": "device001",
   "temperature": 36,
@@ -179,65 +186,68 @@ http://localhost:3000
   "timestamp": "2025-01-16T10:30:00Z"
 }
 
-🚨 Alert Thresholds
-Sensor	Warning	Critical
-Temperature	> 38°C	> 40°C
-Humidity	> 70%	> 75%
-Pressure	< 985 hPa	< 980 hPa
-Vibration	> 4.5	> 5.5
-Battery	< 80%	< 70%
-🎨 UI Alert States
+---
 
-🟢 Normal – Safe operating range
+## 🚨 Alert Thresholds
 
-🟡 Warning – Needs attention
+| Sensor       | Warning         | Critical        |
+|---------------|----------------|----------------|
+| Temperature   | > 38 °C         | > 40 °C         |
+| Humidity      | > 70 %          | > 75 %          |
+| Pressure      | < 985 hPa       | < 980 hPa       |
+| Vibration     | > 4.5           | > 5.5           |
+| Battery       | < 80 %          | < 70 %          |
 
-🔴 Critical – Immediate action required
+---
 
-💡 Use Cases
+## 🎨 UI Alert States
 
-Smart factory monitoring
+- 🟢 **Normal:** Safe operating range  
+- 🟡 **Warning:** Needs attention  
+- 🔴 **Critical:** Immediate action required  
 
-Predictive maintenance
+---
 
-Azure IoT learning & demos
+## 💡 Use Cases
 
-Academic major project
+- Smart factory monitoring  
+- Predictive maintenance  
+- Azure IoT learning & demos  
+- Academic major projects  
+- IoT dashboard prototypes  
 
-IoT dashboard prototypes
+---
 
-🏆 What This Project Demonstrates
+## 🏆 What This Project Demonstrates
 
-End-to-end Azure IoT workflow
+- End-to-end **Azure IoT** workflow  
+- Secure **device-to-cloud** communication  
+- Real-time **streaming architecture**  
+- Integrated **frontend + backend** system  
+- Production-style **UI & alert framework**  
 
-Secure device-to-cloud communication
+---
 
-Real-time streaming architecture
+## 🚀 Future Enhancements
 
-Frontend + backend integration
+- Database integration (**MongoDB / Azure SQL**)  
+- Alert notifications (**Email / SMS**)  
+- Multi-device support  
+- Role-based dashboard access  
+- Cloud deployment (**Azure App Service / Vercel**)  
+- AI-based anomaly detection  
 
-Production-style UI & alerts
+---
 
-🧑‍💻 Author
+## 👨‍💻 Author
 
-Arish
-Software Engineer – Azure IoT & Full Stack
-India 🇮🇳
+**Arish**  
+Software Engineer – Azure IoT & Full Stack  
+🇮🇳 India  
 
-🚀 Future Enhancements
+---
 
-Database storage (MongoDB / Azure SQL)
+## ⭐ Support
 
-Alert notifications (Email / SMS)
+If you found this project helpful, please ⭐ **star the repository on GitHub** to show your support!
 
-Multi-device support
-
-Role-based dashboard access
-
-Cloud deployment (Azure App Service / Vercel)
-
-AI-based anomaly detection
-
-⭐ Support
-
-If you found this project helpful, please ⭐ the repository on GitHub.
