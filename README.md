@@ -173,11 +173,14 @@ npm install
 npm start
 
 
-Open browser:
 
-http://localhost:3000
+Open your browser at:  
+👉 **[http://localhost:3000](http://localhost:3000)**  
+
+---
 
 ## 📊 Telemetry Data Model
+
 
 {
   "deviceId": "device001",
