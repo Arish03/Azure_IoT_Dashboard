@@ -1,0 +1,162 @@
+/* -------- GLOBAL -------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* -------- CONTAINER -------- */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* -------- GRID / CARDS -------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.card p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -------- ALERT STATES -------- */
+.card.normal {
+  border-left: 6px solid #2ecc71;
+}
+
+.card.warning {
+  border-left: 6px solid #f39c12;
+  background: #fff8eb;
+}
+
+.card.critical {
+  border-left: 6px solid #e74c3c;
+  background: #ffecec;
+}
+
+.alert-text {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.alert-text.warning {
+  background: #f39c12;
+  color: #ffffff;
+}
+
+.alert-text.critical {
+  background: #e74c3c;
+  color: #ffffff;
+}
+
+/* -------- CHART SECTION -------- */
+.chart-box {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.chart-box h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* -------- HISTORY TABLE -------- */
+.history-box {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.history-box h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background: #f1f3f5;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  font-weight: 600;
+  color: #444;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  .card p {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
